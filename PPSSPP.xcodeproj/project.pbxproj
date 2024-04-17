@@ -10111,6 +10111,7 @@
 		8CAFA7931785AA9900647A96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -10178,9 +10179,10 @@
 					"\"$(SRCROOT)/ppsspp/ext/glew\"",
 					"\"$(SRCROOT)/ppsspp/ffmpeg/macosx/universal/include\"",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/ppsspp/ffmpeg/macosx/universal/lib\"";
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-D_DEBUG",
@@ -10190,7 +10192,10 @@
 					"$(OTHER_CFLAGS)",
 					"-U__STRICT_ANSI__",
 				);
-				SDKROOT = macosx;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wno-multichar",
@@ -10198,12 +10203,15 @@
 					"-Wno-four-char-constants",
 					"-Wno-unknown-pragmas",
 				);
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
 		8CAFA7941785AA9900647A96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -10271,9 +10279,10 @@
 					"\"$(SRCROOT)/ppsspp/ext/glew\"",
 					"\"$(SRCROOT)/ppsspp/ffmpeg/macosx/universal/include\"",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/ppsspp/ffmpeg/macosx/universal/lib\"";
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = (
 					"-D_NDEBUG",
 					"-fno-strict-aliasing",
@@ -10282,7 +10291,10 @@
 					"$(OTHER_CFLAGS)",
 					"-U__STRICT_ANSI__",
 				);
-				SDKROOT = macosx;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wno-multichar",
@@ -10290,6 +10302,8 @@
 					"-Wno-four-char-constants",
 					"-Wno-unknown-pragmas",
 				);
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
