@@ -26,7 +26,6 @@
 
 #import "PPSSPPGameCore.h"
 #import <OpenEmuBase/OERingBuffer.h>
-#import <OpenGL/gl.h>
 
 #include "Common/GPU/OpenGL/OpenEmuGLContext.h"
 
